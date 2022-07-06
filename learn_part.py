@@ -7,7 +7,7 @@ import pathlib
 # Change "C:\\Users\\nmago\\PycharmProjects\\astroschool_project\\dataset" to your dataset path
 # Change your img_height and image_width
 data_dir = pathlib.Path("/Users/aronovmihail/Documents/dataset/")
-image_count = len(list(data_dir.glob('*\\*.png')))
+image_count = len(list(data_dir.glob('*\\*.png'))) # change to your file format
 print(image_count)
 batch_size = 32
 img_height = 593
@@ -70,7 +70,7 @@ val_loss = history.history['val_loss']
  
 epochs_range = range(epochs)
 print('Model ready. Saving in the directory you inserted...')
-model.save('/Users/aronovmihail/Documents/model') # saving the model for tests
+model.save('/Users/aronovmihail/Documents/model') # saving the model for tests, change to the directory you want
 print('Done!')
 
 plt.figure(figsize=(8, 8))

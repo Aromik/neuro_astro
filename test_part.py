@@ -4,7 +4,7 @@ import os
 
 files=[]
 for f in os.scandir('/Users/aronovmihail/Documents/'): # path to the directory with images you want to test
-    if f.is_file() and f.path.split('.')[-1].lower() == 'png':
+    if f.is_file() and f.path.split('.')[-1].lower() == 'png': # change to your file format, like in learn_part.py
         files.append(f.path)
 model = tf.keras.models.load_model('/Users/aronovmihail/Documents/model') # path to yourn model
 img_height = 593 # change this to be like in learn_part.py
